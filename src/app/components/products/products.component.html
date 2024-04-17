@@ -1,0 +1,55 @@
+
+
+
+
+
+<div class="row row-cols-1 row-cols-md-4 g-4">
+      @for(prd of filteredProducts;track prd.id;let i=$index){
+
+        <div class="col "  >
+
+          <div class="card" appHighlightCard="gray" externalColor="pink">
+            <img [src]="prd.imgUrl" class="card-img-top" alt="...">
+            <div class="card-body" >
+              <h5 class="card-title">{{i+1}} {{prd.name}}</h5>
+    
+              <p class="card-text">Price : {{prd.price | currency:'EUR':'symbol'}}</p>
+              
+         
+
+              @switch (prd.quantity) {
+                @case(1){
+                  <p >Quantity : Last Item</p>
+                }
+                @case(2){
+                  <p>Quantity : Last Two Item</p>
+                }
+                @default {
+                  <p>Quantity: {{prd.quantity}}</p>
+                }
+              }
+<!-- 
+              <button class="btn btn-success" [routerLink]=["/Details",prd.id]>Success</button> -->
+              <button  class="btn btn-success" (click)="navigateToDetails(prd.id)">Details</button>
+      
+              <!-- <input type="number" #countInp />
+              <button class="btn btn-success" (click)="buy(countInp.value,prd.price)">buy</button> -->
+            </div>
+          </div>
+    
+        </div>
+      }@empty {
+        <h1>No Product Found</h1>
+      }
+
+  <!-- </ng-container> -->
+
+
+</div>
+
+
+<!-- <h2>{{myDate | date:'shortDate'}}</h2> -->
+
+<!-- <h2>{{num |square:2}}</h2> -->
+
+<!-- <img src="assets/Rectangle 10.png"/> -->

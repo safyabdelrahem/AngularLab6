@@ -1,0 +1,68 @@
+
+
+{
+    "products": [
+      {
+        "id": "100",
+        "name": "Dell laptop",
+        "price": 500000,
+        "quantity": 3,
+        "imgURL": "https://fakeimg.pl/300/",
+        "catId": 1
+      },
+      {
+        "id": "200",
+        "name": "HP laptop",
+        "price": 500000,
+        "quantity": 0,
+        "imgURL": "https://fakeimg.pl/300/",
+        "catId": 2
+      },
+      {
+        "id": "300",
+        "name": "Iphone",
+        "price": 3054545,
+        "quantity": 2,
+        "imgURL": "https://fakeimg.pl/300/",
+        "catId": 2
+      },
+      {
+        "id": "400",
+        "name": "oppo",
+        "price": 60000,
+        "quantity": 1,
+        "imgURL": "https://fakeimg.pl/300/",
+        "catId": 2
+      },
+      {
+        "id": "500",
+        "name": "Lenovo tablet",
+        "price": 5000,
+        "quantity": 0,
+        "imgURL": "https://fakeimg.pl/300/",
+        "catId": 3
+      },
+      {
+        "id": "600",
+        "name": "samsung tablet",
+        "price": 10000,
+        "quantity": 4,
+        "imgURL": "https://fakeimg.pl/300/",
+        "catId": 3
+      }
+    ],
+    "catergories": [
+      {
+        "id": "1",
+        "name": "laptops"
+      },
+      {
+        "id": "2",
+        "name": "Mobiles"
+      },
+      {
+        "id": "3",
+        "name": "tablets"
+      }
+    ]
+  }
